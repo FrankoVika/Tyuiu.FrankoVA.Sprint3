@@ -12,7 +12,7 @@ namespace Tyuiu.FrankoVA.Sprint3.Task3.V2.Test
             string str = "asdzzz vfvfzz v gthvz";
             char chr = 'z';
             double res = ds.GetMaxCharCount(str, chr);
-            int wait = 6;
+            int wait = 3;
             Assert.AreEqual(res, wait);
         }
     }
