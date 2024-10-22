@@ -6,10 +6,10 @@ namespace Tyuiu.FrankoVA.Sprint3.Task2.V26.Lib
         public double GetMultiplySeries(double value, int startValue, int stopValue)
         {
             double multSeries = 1;
-            int i = 1;
+            
             do
             {
-                multSeries = multSeries * ((Math.Pow(value, 3) * i) + 2);
+                multSeries = multSeries * ((Math.Pow(value, 3) * startValue) + 2);
                 startValue++;
             }
             while (startValue <= stopValue);
