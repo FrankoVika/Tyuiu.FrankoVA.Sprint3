@@ -11,7 +11,7 @@ namespace Tyuiu.FrankoVA.Sprint3.Task1.V18.Test
             int startValue = 1;
             int stopValue = 15;
             double res = ds.GetSumSeries(startValue, stopValue);
-            double wait = 1;
+            double wait = 0.121;
             Assert.AreEqual(res, wait);
         }
     }

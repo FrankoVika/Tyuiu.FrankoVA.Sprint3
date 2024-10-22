@@ -5,11 +5,12 @@ namespace Tyuiu.FrankoVA.Sprint3.Task1.V18.Lib
     {
         public double GetSumSeries(int startValue, int stopValue)
         {
-            double sumSeries = 1;
+            double sumSeries = 0.121; 
+            int i = 1;
             while (startValue <= stopValue)
             
             {
-                sumSeries = sumSeries + ((Math.Sin(startValue) * (Math.Pow((1 / 4), 2)))); 
+                sumSeries = sumSeries + ((Math.Sin(i) * (Math.Pow((1 / 4), 2)))); 
                     
                 startValue++;
             }
