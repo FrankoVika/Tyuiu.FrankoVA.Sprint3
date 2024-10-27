@@ -1,4 +1,5 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint3;
+﻿using System.ComponentModel.Design;
+using tyuiu.cources.programming.interfaces.Sprint3;
 namespace Tyuiu.FrankoVA.Sprint3.Task7.V27.Lib
 {
     public class DataService : ISprint3Task7V27
@@ -12,14 +13,21 @@ namespace Tyuiu.FrankoVA.Sprint3.Task7.V27.Lib
             int count = 0;
             for (int x = startValue; x <= stopValue; x++)
             {
-                y = Math.Round(((Math.Cos(x) / (x + 1)) - Math.Cos(x) * 1.3 + 3 * x),2);
-
-                
+                if (x + 1 == 0)
+                {
+                    y = 0;
+                }
+                else
+                {
+                    y = Math.Round(((Math.Cos(x) / (x + 1)) - Math.Cos(x) * 1.3 + 3 * x),2);
+                }
+               
                 valueArray[count] = y;
                 count++;
             }
-
+            
             return valueArray;
         }
     }
 }
+// if (x + 1 == 0) { // Проверка на деление на ноль
