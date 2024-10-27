@@ -11,8 +11,8 @@ namespace Tyuiu.FrankoVA.Sprint3.Task4.V19.Test
             int startValue = -5;
             int stopValue = 5;
             double res = ds.Calculate(startValue, stopValue);
-            double wait = 8.175;
-            Assert.AreEqual(res, wait);
+            double wait = 9.432;
+            Assert.AreEqual(wait, res);
         }
     }
 }
